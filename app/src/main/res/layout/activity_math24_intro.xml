@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/math24introPage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".games.math24game.activity.Math24IntroActivity">
+
+    <Button
+        android:id="@+id/btn_back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#313131"
+        android:text="@string/back"
+        android:textColor="@color/enable_thumb_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/math24intro"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:background="#0003A9F4"
+        android:text="Инструкция для Math24"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/introBody"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:background="#0000D48A"
+        android:text="1. Цель: использовать 4 числа, чтобы получить 24. Каждое число можно использовать только один раз.
+2. Три жизни на уровне 1, и одна жизнь на уровне 2. Игрок теряет жизнь, если результат не равен 24 после нажатия на знак равенства.
+3. Кнопка Очистить позволяет удалить введенные вами данные до нажатия на знак равенства.
+4. После правильного ответа на вопрос нажмите кнопку Далее, чтобы перейти к следующему вопросу.
+5. После того, как вы правильно ответите на три вопроса, вы перейдете на уровень 2, где потребуется более сложное сочетание чисел.
+6. Игра завершится, когда у игрока не останется жизней. Для уровня 2 в частности, если вы правильно ответите на три вопроса подряд."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/math24intro" />
+</androidx.constraintlayout.widget.ConstraintLayout>
